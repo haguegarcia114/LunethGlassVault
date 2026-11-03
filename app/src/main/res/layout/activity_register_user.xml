@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register New User"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp" />
+
+        <!-- User Profile Picture Preview -->
+        <ImageView
+            android:id="@+id/imgRegisterUserPhoto"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="#E0E0E0"
+            android:src="@android:drawable/ic_menu_camera"
+            android:padding="16dp"
+            android:contentDescription="Select profile picture"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick / Take Picture"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Form Inputs -->
+        <EditText
+            android:id="@+id/etRegUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Role (e.g., Sales Associate, Manager)"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnSaveNewUser"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Save User"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

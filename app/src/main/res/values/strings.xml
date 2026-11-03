@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Luneth GlassVault</string>
+
+    <string name="fileAuthority">com.example.lunethglassvault.fileprovider</string>
+    <string name="total_items_sold_today_0">Total Items Sold Today: 0</string>
+    <string name="log_new_sale">Log New Sale</string>
+    <string name="view_facturas">View Facturas</string>
+
+</resources>

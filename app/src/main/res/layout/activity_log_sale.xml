@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LogSaleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log New Sale"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Item Code Input -->
+        <EditText
+            android:id="@+id/etItemCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Code / Barcode"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Factura Number Input -->
+        <EditText
+            android:id="@+id/etFacturaNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Factura # (Invoice Ref)"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Quantity Sold Input -->
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity Sold"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Unit Price Input -->
+        <EditText
+            android:id="@+id/etUnitPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unit Price (₱)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Camera Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product / Receipt Photo"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/imgSalePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="Captured sale image"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Photo"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Sale Button -->
+        <Button
+            android:id="@+id/btnSaveSale"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Record Sale"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

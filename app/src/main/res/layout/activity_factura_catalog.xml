@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FacturaCatalog">
+
+    <TextView
+        android:id="@+id/tvCatalogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factura &amp; Glassware Catalog"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView for Catalog Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFacturaCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
